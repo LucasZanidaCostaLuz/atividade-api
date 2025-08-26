@@ -1,0 +1,78 @@
+@keyframes animationIced {
+    0% { color: white; }
+    100% {
+    color: rgb(0, 0, 0); 
+    -webkit-text-stroke: #00ffff 0.5px;
+    text-shadow: #00ffff 1px 1px 2px, #00ffff 0 0 1em, #00ffff 0 0 0.2em;
+    }
+}
+
+@keyframes animation {
+    0% { color: white; }
+    100% {
+    color: rgb(0, 0, 0); 
+    -webkit-text-stroke: #ffffff 0.5px;
+    text-shadow: #ffffff 1px 1px 2px, #ffffff 0 0 1em, #fcfcfc 0 0 0.2em;
+    }
+}
+
+@keyframes animationHot {
+    0% { color: white; }
+    100% {
+    color: rgb(0, 0, 0); 
+    -webkit-text-stroke: #ffbb00 0.5px;
+    text-shadow: #ffbb00 1px 1px 2px, #ffbb00 0 0 1em, #ffbb00 0 0 0.2em;
+    }
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.header{
+    background-color: #000000;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+}
+
+.li{
+    color: white;
+    transition: all 1 ease;
+    font-weight: bold;
+}
+
+.liIced{
+    color: white;
+}
+
+.liHot{
+    color: white;
+}
+
+.li :hover{
+    animation: animation 1s forwards;
+    cursor: pointer;
+}
+
+.liIced:hover{
+    animation: animationIced 1s forwards;
+}
+
+.liHot:hover{
+    animation: animationHot 1s forwards;
+}
+
+.nav{
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+
+}
