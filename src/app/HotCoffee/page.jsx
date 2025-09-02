@@ -3,6 +3,7 @@
 import React from 'react'
 import axios from 'axios'
 import {  useState } from 'react'
+import Cards from '@/src/components/Cards/Cards'
 
 export default function page() {
   const [coffee, setCoffee] = useState([])
@@ -30,15 +31,7 @@ export default function page() {
           </button>
         </div>
       </div>
-      <div className=''>
-        {coffee.map((coffees) => (
-          <div key={coffees.id} className='bg-white p-4 rounded-lg shadow'>
-            <h3>{coffees.title}</h3>
-            <p>{coffees.description}</p>
-            <p>{coffees.ingreients}</p>
-          </div>
-        ))}
-      </div>
+      
     </div>
   )
 }

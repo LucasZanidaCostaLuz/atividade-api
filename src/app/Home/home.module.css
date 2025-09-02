@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 85vh;
+}
+
+.main{
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 20px;
+}
+
+.main:hover{
+    transition: 1s;
+    transform: scale(1.02);
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.479);
+}
+
+.texts{
+    color: black;
+}
+
+.name{
+    color:peru;
+    font-size: 1.5rem;
+}
+
+.class{
+    color: #838383;
+    font-size: small;
+}
+
+.senai{
+    color: rgb(218, 152, 87);
+    font-size: 1rem;
+}
+
+.phrase{
+    color: rgb(218, 152, 87);
+    font-size: 1;
+}

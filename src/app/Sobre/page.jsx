@@ -3,7 +3,7 @@ import React from "react";
 export default function Sobre() {
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Sobre Nós</h1>
+      <h1 className="text-2xl font-bold mb-4">Sobre a API</h1>
       <p className="mb-2">
         Bem-vindo à nossa cafeteria! Somos apaixonados por café e dedicados a
         oferecer a melhor experiência possível aos nossos clientes.

@@ -20,8 +20,8 @@
     0% { color: white; }
     100% {
     color: rgb(0, 0, 0); 
-    -webkit-text-stroke: #ffbb00 0.5px;
-    text-shadow: #ffbb00 1px 1px 2px, #ffbb00 0 0 1em, #ffbb00 0 0 0.2em;
+    -webkit-text-stroke: #ff0000e0 0.5px;
+    text-shadow: #ff0000e0 1px 1px 2px, #ff0000e0 0 0 1em, #ff0000e0 0 0 0.2em;
     }
 }
 
@@ -31,7 +31,7 @@
 }
 
 .header{
-    background-color: #000000;
+    background-color: #9b8565;
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -41,6 +41,8 @@
     align-items: center;
     justify-content: space-around;
     height: 15vh;
+    width: 100vw;
+    border-bottom: #fcfcfc 2px solid;
 }
 
 .li{
@@ -74,5 +76,4 @@
     display: flex;
     gap: 1.25rem;
     list-style: none;
-
 }
