@@ -3,6 +3,7 @@
 import React from 'react'
 import axios from 'axios'
 import {  useState } from 'react'
+import Cards from '../../components/Cards/Cards'
 
 export default function page() {
   const [coffee, setCoffee] = useState([])
@@ -10,7 +11,7 @@ export default function page() {
   const buscarCafe = async () => {
     setLoading(true)
     try {
-      const response = await axios.get("https://api.sampleapis.com/coffee/iced")
+      const response = await axios.get(`https://api.sampleapis.com/coffee/iced`)
       const data = response.data
       setCoffee(data)
     } catch (error) {
@@ -31,14 +32,14 @@ export default function page() {
         </div>
       </div>
       <div className=''>
-        {coffee.map((coffees) => (
-          <div key={coffees.id} className='bg-white p-4 rounded-lg shadow'>
-            <h3>{coffees.title}</h3>
-            <p>{coffees.description}</p>
-            <p>{coffees.ingreients}</p>
+          {loading && <p>Carregando...</p>}
+          {!loading && coffee.length === 0 && <p>Nenhum café encontrado</p>}
+          <div className=''>
+            {coffee.map((item) => (
+              <Cards key={item.id} coffee={item} />
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
     </div>
   )
 }
