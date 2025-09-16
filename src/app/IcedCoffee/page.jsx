@@ -4,6 +4,7 @@ import React from 'react'
 import axios from 'axios'
 import {  useState } from 'react'
 import Cards from '../../components/Cards/Cards'
+import { useRouter } from 'next/navigation';
 
 export default function page() {
   const [coffee, setCoffee] = useState([])
@@ -20,7 +21,8 @@ export default function page() {
     finally {
       setLoading(false)
     }
-  }
+
+};
   return (
     <div className=''>
       <div className=''>
